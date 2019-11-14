@@ -478,4 +478,35 @@ button.btn {
   font-size: 12px;
 }
 
+.jumbotron {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url("../development/assets/Background.png") center 340px no-repeat;
+  background-size: contain;
+  width: 100%;
+  padding-top: 90px;
+  height: calc(100vh - var(--navbar-height));
+}
+
+.jumbotron h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 58px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  margin-bottom: 38px;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.jumbotron .btn {
+  background-color: #08A6E4;
+  padding: 20px 210px;
+  font-size: 22px;
+}
+
 /*# sourceMappingURL=main.css.map */
