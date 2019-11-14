@@ -16,7 +16,7 @@ const server = function(cb) {
 }
 
 const css = function() {
-    return gulp.src('./scss/main.scss')
+    return gulp.src('./development/scss/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle : "expanded"
@@ -28,11 +28,11 @@ const css = function() {
 }
 
 const watch = function(cb) {
-    gulp.watch("./scss/**/*.scss", gulp.series(css));
+    gulp.watch("./development/scss/**/*.scss", gulp.series(css));
     gulp.watch("./*.html").on('change', browserSync.reload);
     cb();
 }
 
 exports.css = css;
 exports.watch = watch;
-exports.default = gulp.series(css, server, watch);
+exports.default = gulp.series(css, server, watch); 
