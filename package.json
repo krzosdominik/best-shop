@@ -1,26 +1,25 @@
 {
-  "name": "fer_scrum_lab",
+  "name": "gulp-instalacja",
   "version": "1.0.0",
-  "description": "Front-End ScrumLab",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CodersLab-core/FER_SCRUM_LAB.git"
-  },
-  "author": "Michał T",
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CodersLab-core/FER_SCRUM_LAB/issues"
-  },
-  "homepage": "https://github.com/CodersLab-core/FER_SCRUM_LAB#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.0",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4"
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.5"
   }
 }
