@@ -1,4 +1,11 @@
-@import './normalize';
-@import './grid';
-@import './fonts';
-@import './navbar';
+@import './generic/normalize';
+
+@import './settings/all';
+@import './settings/colors';
+@import './settings/fonts';
+@import './settings/grid';
+@import './settings/variables';
+
+@import './elements/navbar';
+@import './elements/buttons';
+

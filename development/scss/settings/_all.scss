@@ -1,0 +1,26 @@
+body,
+html {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  background-color: #fff;
+}
+
+body {
+  padding-top: var(--navbar-height);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1124px;
+  margin-right: auto;
+  margin-left: auto;
+}
