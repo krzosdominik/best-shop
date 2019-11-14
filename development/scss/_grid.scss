@@ -1,0 +1,11 @@
+// G R I D    S Y S T E M
+
+$column: 12;
+
+.row {
+    @for $i from 1 through $column {
+        .col-#{$i} {
+            width: 100% / $column * $i;
+        }
+    }
+  }
