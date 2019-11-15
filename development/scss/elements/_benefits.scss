@@ -1,0 +1,98 @@
+.benefits {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 105px;
+  padding-bottom: 105px;
+
+  .benefit {
+    display: flex;
+    margin-bottom: 40px;
+    min-height: 375px;
+  }
+
+  figure {
+    display: flex;
+    align-items: center;
+    padding: 50px 90px;
+    position: relative;
+    z-index: 1;
+  }
+
+  figure.trumpet {
+    border-radius: 5px;
+    border: 1px solid #e8e9ed;
+    background-color: map-get($colors, success);
+    margin-left: 60px;
+    padding: 80px 30px 0 30px;
+  }
+}
+
+.benefit-body {
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid #e8e9ed;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.benefit-descritption {
+  padding: 50px 35px;
+  width: 700px;
+
+  h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+  }
+
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 0;
+  }
+
+  hr {
+    width: 70%;
+    margin: 40px 0 0 0;
+    border: 2px solid;
+  }
+}
+
+.benefit {
+
+  figure.iphone::before {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-color: map-get($colors, primary);
+    position: absolute;
+    top: 35px;
+    left: 70px;
+    z-index: -1;
+  }
+
+  figure.iphone img {
+    height: 335px;
+  }
+
+  figure.macbook::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 41px;
+    background-color: map-get($colors, secondary);
+    position: absolute;
+    top: 40px;
+    left: 370px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+
+}

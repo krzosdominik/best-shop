@@ -6,3 +6,27 @@ $colors: (
     grey-second: #95989A,
     grey-third: #A5A5A5
 );
+
+.border-primary {
+    border-color: map-get($colors, primary) !important;
+  }
+  
+  .border-secondary {
+    border-color: map-get($colors, secondary) !important;
+  }
+  
+  .border-tertiary {
+    border-color: map-get($colors, success) !important;
+  }
+  
+  .bg-primary {
+    background-color: map-get($colors, primary) !important;
+  }
+  
+  .bg-secondary {
+    background-color: map-get($colors, secondary) !important;
+  }
+  
+  .bg-tertiary {
+    background-color: map-get($colors, success) !important;
+  }
