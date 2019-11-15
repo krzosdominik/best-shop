@@ -422,12 +422,15 @@ a {
 .navbar {
   text-decoration: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
   height: var(--navbar-height);
   background-color: #fff;
   box-shadow: 0px 3px 6px #00000029;
-  padding: 0 140px 0 140px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
 .navbar .navbar-brand {
@@ -507,6 +510,75 @@ button.btn {
   background-color: #08A6E4;
   padding: 20px 210px;
   font-size: 22px;
+}
+
+.achievement-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  height: calc(100vh - var(--navbar-height));
+}
+
+.achievement-section h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  margin-bottom: 100px;
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.achievements .achievement {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 110px;
+  text-align: center;
+}
+
+.achievements .achievement figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  width: 100%;
+}
+
+.achievements .achievement figure::before {
+  content: "";
+  display: inline-block;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.achievements .achievement figure img {
+  margin-right: -45px;
+}
+
+.achievements .achievement p {
+  color: #A5A5A5;
+}
+
+.achievements .achievement:first-child figure::before {
+  background-color: #FB3B64;
+}
+
+.achievements .achievement:nth-child(2) figure::before {
+  background-color: #08A6E4;
+}
+
+.achievements .achievement:last-child figure::before {
+  background-color: #55DFB4;
 }
 
 /*# sourceMappingURL=main.css.map */
