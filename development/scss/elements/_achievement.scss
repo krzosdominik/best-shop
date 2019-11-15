@@ -1,0 +1,68 @@
+.achievement-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  height: calc(100vh - var(--navbar-height));
+
+  h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    margin-bottom: 100px;
+  }
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  .achievement {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 110px;
+    text-align: center;
+
+    figure {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 60px;
+      width: 100%;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 63px;
+        height: 63px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+      }
+
+      img {
+        margin-right: -45px;
+      }
+    }
+
+    p {
+      color: map-get($colors, grey-third);
+    }
+
+    &:first-child figure::before {
+      background-color: map-get($colors, secondary);
+    }
+
+    &:nth-child(2) figure::before {
+      background-color: map-get($colors, primary);
+    }
+
+    &:last-child figure::before {
+      background-color: map-get($colors, success);
+    }
+  }
+}
